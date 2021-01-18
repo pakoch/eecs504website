@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>EECS 504 - Winter 2021</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt" style="padding: 3em 4em 1em 4em">
+						<h1>Foundations of Computer Vision</h1>
+						<p>Instructor: Parker Koch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Winter 2021</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#schedule">Schedule</a></li>
+							<li><a href="#staff">Staff</a></li>
+							<li><a href="#courseinfo">Course Info</a></li>
+                            <li>|</li>
+                            <li><a href="generic.html">Canvas</a>
+                            <li><a href="generic.html">Gradescope</a>
+                            <li><a href="generic.html">Piazza</a>
+                            <li><a href="generic.html">Zoom</a>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Schedule -->
+							<section id="schedule" class="main special">
+								<header class="major">
+									<h2>Schedule</h2>
+								</header>
+                                
+                                <center>
+                                    <div class="table-wrapper" style ="width:90%">
+                                        <font style = "font-size: 16px">
+                                            <table class="alt">
+                                              <tbody>
+                                              <col width="8%">
+                                              <col>
+                                              <col>
+                                              <col>
+                                              <col width="12%">
+                                              <thead>
+                                                <tr>
+                                                  <th style = "text-align:center">Week</th>
+                                                  <th style = "text-align:center">Lecture Topic</th>
+                                                  <th style = "text-align:center">Python Code-Along</th>
+                                                  <th style = "text-align:center">Zoom Discussion</th>
+                                                  <th style = "text-align:center">Materials</th>
+                                                </tr>
+                                              </thead>
+                                              <style>
+                                                ul.materials {
+                                                    padding-left: 15px;
+                                                    margin-bottom: 0px;
+                                                }
+                                                div.subtopic {
+                                                    font-weight: lighter;
+                                                }
+                                                span.title {
+                                                    font-weight: bold;
+                                                }
+                                                td.date {
+                                                    text-align: center;
+                                                }
+                                              </style>
+                                              
+                                              <tr class = "alternate"><td class="date">Jan. 18<br>-<br>Jan. 22</td>
+                                                <td><span class="title">Introduction</span><br>Motivation, images, math preliminaries, invariances</td>
+                                                <td><span class="title">Image Manipulation</span><br>Reading/writing images, pixel operations, color</td>
+                                                <td>Course logistics</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Jan. 25<br>-<br>Jan. 29 </td>
+                                                <td><span class="title">Image Manipulation</span><br>Blurring, filtering, up/downsampling, Fourier transforms, frequency space</td>
+                                                <td><span class="title">Image Manipulation (cont.)</span><br>Windowing, convolution, histograms and binning</td>
+                                                <td>Continuous images and digitization</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Feb. 1<br>-<br>Feb. 5 </td>
+                                                <td><span class="title">Historical vision problems</span><br>Projective geometry, featurization, edge/corner detection, scale space</td>
+                                                <td><span class="title">Image stitching</span><br>Registration, Laplacian blending</td>
+                                                <td>Applications of registration and matching methods</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Feb. 8<br>-<br>Feb. 12 </td>
+                                                <td><span class="title">Image priors and optimization</span><br>Texture synthesis, denoising, superresolution</td>
+                                                <td><span class="title">Image denoising</span><br>Patch priors</td>
+                                                <td>Biased priors and data-based discrimination</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Feb. 15<br>-<br>Feb. 19 </td>
+                                                <td><span class="title">Motion and video</span><br>Motion parallax, tracking, optical flow</td>
+                                                <td><span class="title">Scene depth from disparity</span><br>Epipolar lines, multiview geometry</td>
+                                                <td>TBD</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Feb. 22<br>-<br>Feb. 26 </td>
+                                                <td><span class="title">Segmentation</span><br>Graph theory, superpixels, tree-based methods, graph cut-based methods</td>
+                                                <td><span class="title">Foreground segmentation</span><br>Max-flow/min-cut, clustering</td>
+                                                <td>TBD</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                              
+                                              
+                                              <tr class = "alternate"><td class = "topic" colspan = 5><center><span class="title">Homework 1 Due: Feb. 28 @ 11:59 PM (EST)</span></center></td></tr>
+                                              
+                                              
+                                              <tr class = "alternate"><td class="date">Mar. 1<br>-<br>Mar. 5 </td>
+                                                <td><span class="title">Machine learning basics</span><br>Parametric learning, function approximation, classification, overfitting</td>
+                                                <td><span class="title">Simple classifiers</span><br>Linear classifiers, lead-up to neural nets</td>
+                                                <td>Separability and label spaces</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Mar. 8<br>-<br>Mar. 12 </td>
+                                                <td><span class="title">Neural networks</span><br>Layers, nonlinearities, regularization, loss functions</td>
+                                                <td><span class="title">Backpropagation</span><br>Deep dive on linear and convolutional layers</td>
+                                                <td>Backpropagation on ReLU, sigmoid, and pooling layers</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Mar. 15<br>-<br>Mar. 19 </td>
+                                                <td><span class="title">PyTorch</span><br>Parameters, computation graphs, Autograd</td>
+                                                <td><span class="title">Training models</span><br>Model structure, saving/loading model states</td>
+                                                <td>TBD</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Mar. 22<br>-<br>Mar. 26 </td>
+                                                <td><span class="title">Object detection</span><br>One-shot detectors, region-based CNNs, instance segmentation</td>
+                                                <td><span class="title">TBD</span><br></td>
+                                                <td>TBD</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Mar. 29<br>-<br>Apr. 2 </td>
+                                                <td><span class="title">Dense labeling problems</span><br>Scene recognition, semantic segmentation</td>
+                                                <td><span class="title">Semantic segmentation example</span><br>Hypercolumn methods, NNs as featurizers</td>
+                                                <td>TBD</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Apr. 5<br>-<br>Apr. 9 </td>
+                                                <td><span class="title">Temporal models</span><br>3D CNNs, RNNs, attention, tracking</td>
+                                                <td><span class="title">TBD</span><br></td>
+                                                <td>TBD</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li><li>Code-along</li></ul></td></tr>
+                                              
+                                              
+                                              <tr class = "alternate"><td class = "topic" colspan = 5><center><span class="title">Homework 2 Due: Apr. 12 @ 11:59 PM (EST)</span></center></td></tr>
+                                              
+                                              
+                                              <tr class = "alternate"><td class="date">Apr. 12<br>-<br>Apr. 16 </td>
+                                                <td><span class="title">Adversarial deep learning</span><br>GANs, debiasing, domain transfer</td>
+                                                <td>No code-along</td>
+                                                <td>Extra office hours for project help</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Apr. 19<br>-<br>Apr. 21 </td>
+                                                <td><span class="title">Multimodal deep learning</span><br>Language models, audio encoding, multimodal fusion</td>
+                                                <td>No code-along</td>
+                                                <td>Extra office hours for project help</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li></ul></td></tr>
+                                                
+                                              <tr class = "alternate"><td class="date">Finals<br>Week</td>
+                                                <td>No lecture</td>
+                                                <td>No code-along</td>
+                                                <td>Extra office hours for project help</td>
+                                                <td><ul class="materials"><li>Lecture</li><li>Slides (pdf)</li></ul></td></tr>
+                                              
+                                          </table>
+                                        </font>
+                                      </div>
+                                </center>
+							</section>
+
+						<!-- Staff -->
+							<section id="staff" class="main special">
+								<header class="major">
+									<h2>Staff</h2>
+								</header>
+                                <style>
+                                    img.staff {
+                                        border-radius: 50%;
+                                        height: 250px;
+                                        margin-bottom: 1em;
+                                    }
+                                    div.staff {
+                                        text-align: center;
+                                    }
+                                </style>
+                                <ul class="features">
+									<li>
+										<div class="staff">
+                                            <div>
+                                                <img class="staff" src="images/Parker.jpg" style="border: 15px solid #efa8b0"></img>
+                                            </div>
+                                            <h3>Parker Koch</h3>
+                                            <p><span class="title">Primary Instructor</span><br>PhD Candidate, ECE</p>
+                                        </div>
+									</li>
+									<li>
+										<div class="staff">
+                                            <div>
+                                                <img class="staff" src="images/Rupesh.jpg" style="border: 15px solid #8cc9f0"></img>
+                                            </div>
+                                            <h3>Rupesh Gupta</h3>
+                                            <p><span class="title">Graduate Student Instructor</span><br>MS Student, ECE</p>
+                                        </div>
+									</li>
+								</ul>
+                                
+                                <h3>Office Hours Schedule</h3>
+                                
+                                <center>
+                                    <style>
+                                        .schedule tr td {
+                                            padding: 0px 12px;
+                                        }
+                                        .schedule td:first-child {
+                                            text-align:right;
+                                        }
+                                        td.block {
+                                            color: #fff;
+                                            font-weight: bold;
+                                            text-align: center;
+                                            vertical-align: middle;
+                                        }
+                                        td.parker {
+                                            background-color: #efa8b0;
+                                        }
+                                        td.rupesh {
+                                            background-color: #8cc9f0;
+                                        }
+                                        td.discussion {
+                                            background-color: #a89cc8;
+                                        }
+                                    </style>
+                                    <div class="table-wrapper" style ="width:90%">
+                                        <font style = "font-size: 16px">
+                                            <table class="alt schedule">
+                                              <tbody>
+                                              <col width="5%"><col width="19%"><col width="19%"><col width="19%"><col width="19%"><col width="19%">
+                                              <thead>
+                                                <tr>
+                                                  <th></th>
+                                                  <th style = "text-align:center">Monday</th>
+                                                  <th style = "text-align:center">Tuesday</th>
+                                                  <th style = "text-align:center">Wednesday</th>
+                                                  <th style = "text-align:center">Thursday</th>
+                                                  <th style = "text-align:center">Friday</th>
+                                                </tr>
+                                              </thead>
+                                              
+                                              <tr class="alternate"><td>8:30</td>   <td></td><td></td><td></td><td></td><td></td></tr>
+                                              <tr class="alternate"><td>9:00</td>   <td></td><td></td><td></td><td></td><td class="block rupesh" rowspan="4">Rupesh<br>Office hours</td></tr>
+                                              <tr class="alternate"><td>9:30</td>   <td></td><td></td><td></td><td></td><!--td></td--></tr>
+                                              <tr class="alternate"><td>10:00</td>  <td></td><td></td><td></td><td></td><!--td></td--></tr>
+                                              <tr class="alternate"><td>10:30</td>  <td></td><td></td><td></td><td></td><!--td></td--></tr>
+                                              <tr class="alternate"><td>11:00</td>  <td></td><td></td><td></td><td></td><td></td></tr>
+                                              <tr class="alternate"><td>11:30</td>  <td></td><td></td><td></td><td></td><td></td></tr>
+                                              <tr class="alternate"><td>12:00</td>  <td class="block parker" rowspan="3">Parker<br>Office hours</td><td></td><td class="block parker" rowspan="3">Parker<br>Office hours</td><td></td><td class="block parker" rowspan="3">Parker<br>Office hours</td></tr>
+                                              <tr class="alternate"><td>12:30</td>  <!--td></td--><td></td><!--td></td--><td></td><!--td></td--></tr>
+                                              <tr class="alternate"><td>1:00</td>   <!--td></td--><td></td><!--td></td--><td></td><!--td></td--></tr>
+                                              <tr class="alternate"><td>1:30</td>   <td></td><td class="block parker" rowspan="3">Parker<br>Office hours<td></td><td class="block discussion" rowspan="2">Zoom Discussion</td><td></td></tr>
+                                              <tr class="alternate"><td>2:00</td>   <td></td><!--td></td--><td></td><!--td></td--><td></td></tr>
+                                              <tr class="alternate"><td>2:30</td>   <td></td><!--td></td--><td></td><td class="block parker" rowspan="3">Parker<br>Office hours</td><td></td></tr>
+                                              <tr class="alternate"><td>3:00</td>   <td></td><td></td><td></td><!--td></td--><td></td></tr>
+                                              <tr class="alternate"><td>3:30</td>   <td></td><td></td><td></td><!--td></td--><td></td></tr>
+                                              <tr class="alternate"><td>4:00</td>   <td></td><td></td><td></td><td></td><td></td></tr>
+                                              <tr class="alternate"><td>4:30</td>   <td></td><td></td><td class="block rupesh" rowspan="4">Rupesh<br>Office hours</td><td></td><td></td></tr>
+                                              <tr class="alternate"><td>5:00</td>   <td></td><td></td><!--td></td--><td></td><td></td></tr>
+                                              <tr class="alternate"><td>5:30</td>   <td class="block rupesh" rowspan="2">Rupesh<br>Office hours</td><td></td><!--td></td--><td></td><td></td></tr>
+                                              <tr class="alternate"><td>6:00</td>   <!--td></td--><td></td><!--td></td--><td></td><td></td></tr>
+                                              <tr class="alternate"><td>6:30</td>   <td></td><td></td><td></td><td></td><td></td></tr>
+                                              
+                                          </table>
+                                        </font>
+                                      </div>
+                                      <span style="font-size: 14px">All times are shown in Eastern Standard Time (EST).</span>
+                                </center>
+                                
+								<!-- <ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>5,120</strong> Etiam
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open"></span>
+										<strong>8,192</strong> Magna
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-signal"></span>
+										<strong>2,048</strong> Tempus
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>4,096</strong> Aliquam
+									</li>
+									<li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>1,024</strong> Nullam
+									</li>
+								</ul>
+								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>-->
+							</section>
+
+						<!-- Course Info -->
+							<section id="courseinfo" class="main">
+                                <header class="major">
+                                    <h2>Course Info</h2>
+                                </header>
+                                <style>
+                                    .plan h4 {
+                                        font-weight: bold;
+                                    }
+                                </style>
+                                <div class="plan">
+                                    <h4>Weekly Plan</h4>
+                                    <p>Each week, there will be one prerecorded lecture posted to Canvas, as well as a Jupyter notebook walking through important examples.
+                                    On Thursdays at 1:30 pm EST, we will meet via Zoom for a discussion section. The purpose of this discussion is to deepen your understanding
+                                    of the course context, highlight helpful case studies, and answer questions about the material. The weekly discussions are not mandatory, and will
+                                    be recorded and posted to Canvas afterward.</p>
+                                    <h4>Questions and Clarifications</h4>
+                                    <p>Rather than email the teaching staff directly, we ask that you post questions about the course to <a href="https://piazza.com/umich/winter2021/31783">
+                                    Piazza</a>. If your question is sensitive or private in nature, our email addresses are listed on <a href="https://umich.instructure.com/courses/416221">
+                                    Canvas</a>.
+                                    <h4>Homework</h4>
+                                    <p>The course has two due dates for homework assignments: February 28th and April 12th, both at 11:59 pm EST. Homework 1 covers the
+                                    historical vision unit, and Homework 2 covers the learned vision unit. Both homeworks have a small number of required problems, as well as
+                                    a handful of flexible problems. You must complete at 3 of the flexible problems to receive credit for the homework. If you complete more
+                                    than three, we will choose three to grade and the rest will count towards your recovered credit.</p>
+                                    <h4>Recovering Credit</h4>
+                                    <p>If you are unsatisfied with your score on one of the two homework sets, you can regain some credit by completing one or more of the remaining
+                                    flexible problems. You regain one-third of your score on these problems, for a maximum of 100% on the homework set. These can be turned in any time
+                                    before the end of the semester.
+                                    <h4>Late Policy</h4>
+                                    <p>The purpose of structuring the homework like this is to 1) allow you to play to your strengths, as vision is a field of diversely skilled
+                                    researchers; 2) provide more opportunities to connect material from several lectures into a single setting; and 3) grant flexibility with the
+                                    deadlines. If you know you will need to submit an assignment late, email Parker as early as possible to make arrangements for an adjusted due date.
+                                    In the absence of an agreement that your assignment will be late, you will lose 10% per day it is late.</p>
+                                    <h4>Course Project</h4>
+                                    <p>In lieu of a final exam, you will conduct a course project in teams of 2-4. Details about the project, including several suggested topics,
+                                    will be released later in the semester. After the submission deadline for Homework 2, the weekly Zoom discussions will stop, and additional
+                                    office hours will take their place, for the explicit purpose of project help. Similarly, the lectures after Homework 2 cover supplemental
+                                    topics, and are optional.</p>
+                                    <h4>Grading</h4>
+                                    <p>Your final score in the course is a weighted sum of your scores on the two homework sets and the final project. Among the three scores, your
+                                    highest score is worth 40% of your final score. The second-highest is worth 35% and the lowest is 25%. Barring a dramatic distribution of
+                                    these scores, your final letter grade will be as follows (round to the nearest 1%):</p>
+                                    <style>
+                                        #gradescale td {
+                                            text-align: center;
+                                        }
+                                        #gradescale th {
+                                            text-align: center;
+                                            font-weight: bold;
+                                            padding: 0.3em 0.75em;
+                                        }
+                                    </style>
+                                    <table id="gradescale">
+                                        <tbody>
+                                            <tr><th>A+</th><th>A</th><th>A-</th><th>B+</th><th>B</th><th>B-</th><th>C+</th><th>C</th><th>C-</th><th>D+</th><th>D</th><th>D-</th><th>F</th></tr>
+                                            <tr><td>97-100</td><td>93-96</td><td>90-92</td><td>87-89</td><td>83-86</td><td>80-82</td><td>77-79</td><td>73-76</td><td>70-72</td><td>67-69</td><td>63-66</td><td>60-62</td><td>0-59</td></tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <h4>Academic Honesty</h4>
+                                    <p>While you are (highly!) encouraged to discuss homework assignments with other students, your programming work must be completed individually.
+                                    You may not search for solutions online, or use existing implementations of the algorithms in the assignments. Please see the <a href="https://ecas.engin.umich.edu/honor-council/">
+                                    Michigan engineering honor code</a> for more information.
+                                </div>
+							</section>
+                            
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!--<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section> -->
+						<p class="copyright">&copy; University of Michigan 2021. Website built on <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
